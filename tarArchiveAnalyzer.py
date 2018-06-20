@@ -56,6 +56,8 @@ def parseDirectory(nFlag, cFlag, directoryToParse):
         elif os.path.isdir(fi) is True:
             parseDirectory(nFlag, cFlag, fi)
 
+    os.chdir("..")
+
 def checkArguments():
     nFlag = False
     cFlag = False
